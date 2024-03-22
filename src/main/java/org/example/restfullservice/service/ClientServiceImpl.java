@@ -19,7 +19,6 @@ public class ClientServiceImpl implements ClientService{
         client.setId(clientId);
         CLIENT_MAP.put(clientId, client);
     }
-
     @Override
     public List<Client> clientAll() {
         return new ArrayList<>(CLIENT_MAP.values());
