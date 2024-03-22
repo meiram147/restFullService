@@ -1,6 +1,7 @@
 package org.example.restfullservice.service;
 
 import org.example.restfullservice.model.Client;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
+@Service
 public class ClientServiceImpl implements ClientService{
     private static final Map<Integer, Client> CLIENT_MAP = new HashMap<>();
 
